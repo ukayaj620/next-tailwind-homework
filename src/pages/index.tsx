@@ -12,7 +12,7 @@ export default function Home() {
       <div className="mt-8 flex flex-col gap-y-6">
         <Link
           className="text-blue-700 hover:underline hover:text-blue-800"
-          href="/simple-responsive-form"
+          href="/register-form"
         >
           Register Form
         </Link>
