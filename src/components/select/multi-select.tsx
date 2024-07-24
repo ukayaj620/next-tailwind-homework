@@ -27,13 +27,7 @@ export const MultiSelect = ({
   onChange,
 }: Props) => {
   return (
-    <DropdownMenu.Root
-      onOpenChange={(isOpen) => {
-        if (!isOpen && values.length === 0) {
-          onChange(options.map((o) => o.value));
-        }
-      }}
-    >
+    <DropdownMenu.Root>
       <DropdownMenu.Trigger
         className={twMerge(
           "group flex items-center justify-between gap-x-2 px-3 py-2.5 border border-neutral-400 rounded-lg outline-none hover:border-blue-600",
