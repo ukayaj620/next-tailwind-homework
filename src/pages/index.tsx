@@ -16,6 +16,12 @@ export default function Home() {
         >
           Register Form
         </Link>
+        <Link
+          className="text-blue-700 hover:underline hover:text-blue-800"
+          href="/todo"
+        >
+          Todo Form
+        </Link>
       </div>
     </main>
   );
