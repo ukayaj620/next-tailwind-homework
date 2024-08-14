@@ -10,7 +10,9 @@ const TodoItem = ({ todo }: { todo: Todo }) => {
       <div className="flex justify-between w-full items-center">
         <h2 className="text-2xl font-semibold w-full">{todo.title}</h2>
         <div className="flex items-center gap-x-3">
-          <Button variant="fill">Edit</Button>
+          <Link href={`/todo/${todo.id}/edit`}>
+            <Button variant="fill">Edit</Button>
+          </Link>
           <Button
             variant="outline"
             onClick={() => {
